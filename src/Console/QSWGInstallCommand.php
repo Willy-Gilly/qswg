@@ -1,6 +1,6 @@
 <?php
 
-namespace WillyGilly\Qswg\Console\Commands;
+namespace WillyGilly\Qswg\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
