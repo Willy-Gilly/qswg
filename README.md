@@ -45,6 +45,11 @@ It uses AdminLTE's Blank page
 
 ## Installation
 
+With Composer : 
+```sh
+composer require willy-gilly/qswg
+```
+
 It requires Laravel AdminLTE, if you didn't installed it yet, maybe use the shell script here next time :
 Github : https://github.com/Willy-Gilly/Laravel-Auth-AdminLTE-Installer
 You also might use Laravel Passport to use `app\Http\Controllers\API\LoginController.php`
