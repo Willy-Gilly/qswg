@@ -18,13 +18,13 @@
     "autoload": {
         "psr-4": {
             "WillyGilly\\Qswg\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "WillyGilly\\Qswg\\QswgServiceProvider"
             ]
+        }
     }
-  }
-  }
 }
