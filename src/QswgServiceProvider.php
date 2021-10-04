@@ -2,10 +2,10 @@
 
 namespace WillyGilly\Qswg;
 
-use WillyGilly\Qswg\Console\Commands\ControllerMakerCommand;
-use WillyGilly\Qswg\Console\Commands\MakeLangCommand;
-use WillyGilly\Qswg\Console\Commands\QSWGInstallCommand;
-use WillyGilly\Qswg\Console\Commands\ViewMakerCommand;
+use WillyGilly\Qswg\Console\ControllerMakerCommand;
+use WillyGilly\Qswg\Console\MakeLangCommand;
+use WillyGilly\Qswg\Console\QSWGInstallCommand;
+use WillyGilly\Qswg\Console\ViewMakerCommand;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
