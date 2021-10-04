@@ -1,0 +1,5 @@
+<?php
+
+return [
+        'newLangFile' => 'You can use __("nameOfLangFile.keyOfThisArray") to translate your text into your view',
+];

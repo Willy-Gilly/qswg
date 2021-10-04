@@ -1,0 +1,67 @@
+<?php
+
+namespace App\Http\Controllers\View;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Contracts\Support\Renderable;
+
+abstract class ViewController extends Controller
+{
+    protected string $index = "home";
+
+    /*
+     * Change the language in the page
+     */
+    public function __construct()
+    {
+        //$lang = session()->get('lang');
+        //$this->middleware("setLocale:".$lang);
+    }
+
+    public function home(): Renderable
+    {
+        return view($this->index);
+    }
+
+    public function welcome(): Renderable
+    {
+        return view('welcome');
+    }
+
+// --------------- Testing Error Pages --------------
+    public function getNotFoundPage(): Renderable
+    {
+        return view('errors.404');
+    }
+
+    public function getRightErrorPage(): Renderable
+    {
+        return view('errors.403');
+    }
+
+    public function getUnauthorizedPage(): Renderable
+    {
+        return view('errors.401');
+    }
+
+    public function getAuthenticationTimoutPage(): Renderable
+    {
+        return view('errors.419');
+    }
+
+    public function getTooManyRequestPage(): Renderable
+    {
+        return view('errors.429');
+    }
+
+    public function getInternalErrorPage(): Renderable
+    {
+        return view('errors.500');
+    }
+
+    public function getServiceUnavailablePage(): Renderable
+    {
+        return view('errors.503');
+    }
+// ------------ End Testing Error pages --------------------
+}

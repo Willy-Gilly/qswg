@@ -1,0 +1,20 @@
+{
+    "name": "willy-gilly/qswg",
+    "description": "Personnal Tool to make controllers extending from a special one instead of the default one",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willy Gilly",
+            "email": "willygilly85@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "willy-gilly\\controllermaker\\": "src"
+        }
+    }
+}

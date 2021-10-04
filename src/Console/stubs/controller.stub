@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers\$extends$;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class $class$$extends$Controller extends $extends$Controller
+{
+    public function __construct()
+    {
+        parent::__construct();
+    }
+}
