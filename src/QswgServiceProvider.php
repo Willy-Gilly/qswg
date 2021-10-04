@@ -18,7 +18,7 @@ class QswgServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->loadConfig();
     }
 
     /**
@@ -31,6 +31,10 @@ class QswgServiceProvider extends ServiceProvider
         $this->registerCommands();
         $this->loadRoutes();
         $this->loadConfig();
+        
+        $this->publishes([
+        __DIR__.'/../config/qswg.php' => config_path('qswg.php'),
+        ]);
     }
 
     private function registerCommands()
