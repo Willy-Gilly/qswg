@@ -10,11 +10,21 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "laravel/framework": ">=6.0",
+        "php": ">=7.2.0",
+    },
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "willy-gilly\\controllermaker\\": "src"
-        }
+            "WillyGilly\\Qswg\\": "src/"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WillyGilly\\Qswg\\QswgServiceProvider"
+            ]
     }
+  },
+  },
 }
