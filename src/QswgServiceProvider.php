@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace WillyGilly\Qswg;
 
 use App\Console\Commands\ControllerMakerCommand;
 use App\Console\Commands\MakeLangCommand;
