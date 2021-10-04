@@ -17,6 +17,7 @@
     "require-dev": {},
     "autoload": {
         "psr-4": {
+            "App\\": "app/",
             "WillyGilly\\Qswg\\": "src/"
         }
     },
