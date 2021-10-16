@@ -54,7 +54,7 @@ class ControllerMakerCommand extends Command
      */
     public function getStubVariables(): array
     {
-        if(str_contains($string, '/'))
+        if(str_contains($this->argument('classname'), '/'))
         {
             $tmpclass = substr(strrchr($this->getClassName($this->argument('classname')), "/"), 1);
         }
