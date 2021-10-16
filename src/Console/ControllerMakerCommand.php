@@ -60,7 +60,7 @@ class ControllerMakerCommand extends Command
         }
         else
         {
-            $tmpclass = $this->getClassName($this->argument('classname');
+            $tmpclass = $this->getClassName($this->argument('classname'));
         }
         return [
             'class' => $tmpclass,
